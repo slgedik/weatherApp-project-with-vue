@@ -111,6 +111,7 @@ export default {
     changeLanguage(lang) {
       const { t } = this.$i18n;
       this.$i18n.locale = lang;
+      this.selectedLanguage = lang;
       this.getWeather();
       document.title = t('messages.titleText');
     },
