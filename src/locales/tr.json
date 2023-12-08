@@ -1,0 +1,13 @@
+{
+  "messages": {
+    "titleText": "Hava Durumu Tahmini",
+    "city": "Şehir:",
+    "find": "Bul",
+    "reset": "Sıfırla",
+    "info1": "Nem: ",
+    "info2": "Rüzgar Hızı: ",
+    "username": "Kullanıcı Adı: ",
+    "password": "Şifre: ",
+    "loginText": "Giriş Yap"
+  }
+}

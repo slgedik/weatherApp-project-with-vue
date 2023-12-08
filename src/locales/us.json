@@ -1,0 +1,13 @@
+{
+  "messages": {
+    "titleText": "Weather Forecast",
+    "city": "City:",
+    "find": "Find",
+    "reset": "Reset",
+    "info1": "Humidity: ",
+    "info2": "Wind Speed: ",
+    "username": "Username: ",
+    "password": "Password: ",
+    "loginText": "Login"
+  }
+}
