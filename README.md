@@ -1,7 +1,7 @@
 # Weather App Project
 This repository contains a simple weather application built with Vue.js. The app allows users to log in and view the weather forecast for Ankara and Istanbul by default. Additionally, users can search for the weather in other cities.
 
-![weather-app-pho](https://github.com/slgedik/weatherApp-project-with-vue/assets/112625294/86da8a8d-1a5f-40d2-ba3d-7094b39d38d5)
+![weather-pho](https://github.com/slgedik/weatherApp-project-with-vue/assets/112625294/2a16bb12-8388-4a36-924e-3ff6e912ab66)
 
 ## Project setup
 To install the dependencies and run the application, follow these steps using Yarn:
@@ -21,20 +21,20 @@ Install dependencies using Yarn:
 yarn install
 ```
 
-##Usage
+## Usage
 To run the application locally, execute the following command:
 ```
 yarn serve
 ```
-This will start the development server, and you can view the app by navigating to **http://localhost:8080** in your web browser.
+This will start the development server, and you can view the app by navigating to ** http://localhost:8080 ** in your web browser.
 
-**This project has a static username and password. So, to log in : **
+** This project has a static username and password. So, to log in : **
 ```
 username : user
 password : password
 ```
 
-##Application Structure
+## Application Structure
 The application is structured into several components:
 
 App.vue: The main component that handles the overall structure of the application, including user authentication and weather display.
@@ -47,7 +47,7 @@ WeatherCard.vue: A reusable component for displaying weather information for a s
 Internationalization (i18n)
 The application supports internationalization (i18n) with translations provided in JSON format. There are two language options available: Turkish (tr) and English (us). The language can be changed using the language buttons in the application.
 
-##Weather API
+## Weather API
 The application uses the OpenWeatherMap API to fetch weather data for different cities. The API key is included in the code and should be kept secure. If you plan to deploy this application, consider securing the API key.
 
 ##Styling
