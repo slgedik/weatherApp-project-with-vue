@@ -26,7 +26,7 @@ To run the application locally, execute the following command:
 ```
 yarn serve
 ```
-This will start the development server, and you can view the app by navigating to ** http://localhost:8080 ** in your web browser.
+This will start the development server, and you can view the app by navigating to http://localhost:8080 in your web browser.
 
 ** This project has a static username and password. So, to log in : **
 ```
@@ -44,14 +44,13 @@ WeatherComponent.vue: The main weather component that allows users to search for
 
 WeatherCard.vue: A reusable component for displaying weather information for a specific city.
 
-Internationalization (i18n)
-The application supports internationalization (i18n) with translations provided in JSON format. There are two language options available: Turkish (tr) and English (us). The language can be changed using the language buttons in the application.
+Internationalization (i18n): The application supports internationalization (i18n) with translations provided in JSON format. There are two language options available: Turkish (tr) and English (us). The language can be changed using the language buttons in the application.
 
 ## Weather API
-The application uses the OpenWeatherMap API to fetch weather data for different cities. The API key is included in the code and should be kept secure. If you plan to deploy this application, consider securing the API key.
+The app uses OpenWeatherMap API to get weather data for different cities. API key is included in the code. If you plan to distribute this application, please use your own API key
 
-##Styling
+## Styling
 The application uses Tailwind CSS for styling, and the styles are defined within the individual Vue components.
 
-##Responsive Design
+## Responsive Design
 The application is designed to be responsive, with specific styles applied for smaller screens (max-width: 768px).
