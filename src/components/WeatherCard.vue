@@ -6,9 +6,7 @@
       <p class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
         {{ weather.weather[0].description }}
       </p>
-      <p class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-        {{ (weather.main.temp - 273.15).toFixed(2) }}°C
-      </p>
+      <p class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{{ weather.main.temp }}°C</p>
       <p class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
         {{ $t('messages.info1') }} {{ weather.main.humidity }}%
       </p>

@@ -9,14 +9,17 @@
       <div class="px-8 py-16 flex-col h-64 border-4 rounded-md">
         <div class="mb-4 inline-block">
           <label class="font-bold text-lg mb-2" for="username">{{ $t('messages.username') }}</label>
-          <input v-model="username" type="text" id="username" />
+          <input class="pl-1" v-model="username" type="text" id="username" />
         </div>
 
-        <div>
+        <div v-if="$i18n.locale == 'tr'">
+          <label class="font-bold text-lg mb-2 ml-16" for="password">{{ $t('messages.password') }}</label>
+          <input class="pl-1" v-model="password" type="password" id="password" />
+        </div>
+        <div v-else>
           <label class="font-bold text-lg mb-2" for="password">{{ $t('messages.password') }}</label>
-          <input v-model="password" type="password" id="password" />
+          <input class="pl-1" v-model="password" type="password" id="password" />
         </div>
-
         <button class="bg-green-700 hover:bg-green-900 mt-4 text-white font-bold py-2 px-4 rounded-full mt-[24px]" @click="login">
           {{ $t('messages.loginText') }}
         </button>

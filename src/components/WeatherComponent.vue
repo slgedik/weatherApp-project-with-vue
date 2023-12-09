@@ -62,7 +62,7 @@ export default {
   },
   methods: {
     getAnkaraWeather() {
-      const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Ankara&lang=${this.selectedLanguage}&appid=${this.apiKey}`;
+      const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Ankara&lang=${this.selectedLanguage}&units=metric&appid=${this.apiKey}`;
       axios
         .get(apiUrl)
         .then((response) => {
@@ -73,7 +73,7 @@ export default {
         });
     },
     getIstanbulWeather() {
-      const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Istanbul&lang=${this.selectedLanguage}&appid=${this.apiKey}`;
+      const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Istanbul&lang=${this.selectedLanguage}&units=metric&appid=${this.apiKey}`;
       axios
         .get(apiUrl)
         .then((response) => {
@@ -92,8 +92,7 @@ export default {
     },
     searchWeather() {
       this.showDefaultCards = false;
-      //Celsius=Kelvin−273.15
-      const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${this.city}&lang=${this.selectedLanguage}&appid=${this.apiKey}`;
+      const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${this.city}&lang=${this.selectedLanguage}&units=metric&appid=${this.apiKey}`;
       axios
         .get(apiUrl)
         .then((response) => {
